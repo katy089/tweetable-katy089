@@ -12,18 +12,23 @@
   <% end %>
 
   <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div>
     <%= form.label :username, style: "display: block" %>
     <%= form.text_field :username %>
   </div>
 
   <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
+  </div>
+
+  <div style="margin-botom:16px">
+    <%= form.label :avatar, style: "display: block" %>
+    <%= form.file_field :avatar %>
   </div>
 
   <div>
@@ -32,8 +37,8 @@
   </div>
 
   <div>
-    <%= form.label :role, style: "display: block" %>
-    <%= form.number_field :role %>
+    <%= form.label :password_confirmation, style: "display: block" %>
+    <%= form.number_field :password_confirmation %>
   </div>
 
   <div>
