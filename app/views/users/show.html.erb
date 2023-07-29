@@ -1,7 +1,32 @@
 <p style="color: green"><%= notice %></p>
+<h3>SHOW</h3>
+ <div>
+<% if @user.avatar.attached? %>
+    <div>
+    <%= image_tag @user.avatar,alt:"User avatar" %>
+    </div>
+<% end %>
+<p>
+    <strong>Email:</strong>
+    <%= @user.email %>
+  </p>
 
-<%= render @user %>
+  <p>
+    <strong>Username:</strong>
+    <%= @user.username %>
+  </p>
 
+  <p>
+    <strong>Name:</strong>
+    <%= @user.name %>
+  </p>
+
+  <p>
+    <strong>Role:</strong>
+    <%= @user.role %>
+  </p>
+
+ </div>
 <div>
   <%= link_to "Edit this user", edit_user_path(@user) %> |
   <%= link_to "Back to users", users_path %>
